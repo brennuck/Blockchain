@@ -4,6 +4,9 @@ import requests
 import sys
 import json
 
+# Get the last block from the server
+def last_block(self):
+    return self.chain[-1]
 
 def proof_of_work(block):
     """
